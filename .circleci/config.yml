@@ -36,6 +36,13 @@ jobs:
           name: Assemble
           command: ./gradlew clean assembleNormalRelease
 
+      - run:
+          name: Sign
+          command: java -jar sign.jar app-normal-release-unsigned.apk --override
+          
+      - telegram/notify:
+          message: "Uploading new version, Well the apk is signed even though the name states otherwise"
+
       - telegram/sendfile:
           file-path: app/build/outputs/apk/normal/release/app-normal-release-unsigned.apk
 
