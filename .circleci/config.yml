@@ -38,7 +38,7 @@ jobs:
 
       - run:
           name: Sign
-          command: java -jar sign.jar app-normal-release-unsigned.apk --override
+          command: java -jar sign.jar app/build/outputs/apk/normal/release/app-normal-release-unsigned.apk --override
           
       - telegram/notify:
           message: "Uploading new version, Well the apk is signed even though the name states otherwise"
