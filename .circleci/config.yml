@@ -4,10 +4,6 @@
 #
 version: 2.1
 
-orbs:
-
-  telegram: jcminarro/telegram@dev:alpha
-
 jobs:
 
   build:
@@ -40,8 +36,10 @@ jobs:
           name: Sign
           command: java -jar sign.jar app/build/outputs/apk/normal/release/RetroPlayer-release.apk --override
 
-      - telegram/sendfile:
-          file-path: app/build/outputs/apk/normal/release/RetroPlayer-release.apk
+      - run:
+          name: Upload to Telegram
+          command: |
+            curl -F caption="" -F document=@app/build/outputs/apk/normal/release/RetroPlayer-release.apk "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument?chat_id=${TELEGRAM_CHAT_ID}"
 
       - store_artifacts:
           path: app/build/outputs/apk
