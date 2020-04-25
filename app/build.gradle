@@ -81,6 +81,14 @@ android {
     configurations.all {
         resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
     }
+    
+    // APK naming scheme
+    applicationVariants.all { variant ->
+       variant.outputs.all {
+           outputFileName = "RetroPlayer-release.apk"
+       }
+   }
+
 }
 
 def getProperties(String fileName) {
