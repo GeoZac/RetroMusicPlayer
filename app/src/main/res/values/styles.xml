@@ -7,6 +7,7 @@
         <item name="android:scrollbars">none</item>
         <item name="fontFamily">@font/google_san</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="Theme.RetroMusic.Black" parent="Theme.RetroMusic.Base.Black">
@@ -14,6 +15,7 @@
         <item name="android:scrollbars">none</item>
         <item name="fontFamily">@font/google_san</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="Theme.RetroMusic.FollowSystem" parent="Theme.RetroMusic.Base.Adaptive">
@@ -21,6 +23,7 @@
         <item name="android:scrollbars">none</item>
         <item name="fontFamily">@font/google_san</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="Theme.RetroMusic.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
@@ -51,12 +54,14 @@
         <item name="contentInsetStart">0dp</item>
         <item name="titleMarginStart">16dp</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
 
     <style name="ToolbarTextAppearanceSearch" parent="ThemeOverlay.MaterialComponents.Toolbar.Surface">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="ToolbarTextAppearanceNormal">
@@ -66,15 +71,18 @@
         <item name="android:letterSpacing">0.0125</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="ToolbarTextAppearanceNormal.Library" parent="ToolbarTextAppearanceNormal">
         <item name="android:textAppearance">@style/TextViewHeadline6</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="BigTitleTextAppearanceToolbar">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
         <item name="android:textAppearance">@style/TextViewHeadline6</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -84,6 +92,7 @@
 
     <style name="SubTitleTextAppearance">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
         <item name="android:textAppearance">@style/TextViewOverline</item>
         <item name="android:layout_gravity">start|center_vertical</item>
         <item name="android:padding">12dp</item>
@@ -94,6 +103,7 @@
     <style name="BottomSheetItemTextAppearance" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="Fab" parent="FabParent" />
@@ -103,6 +113,7 @@
         <item name="textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
@@ -119,6 +130,7 @@
 
     <style name="ErrorHandlingTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewNormal">
@@ -127,48 +139,59 @@
 
     <style name="TextViewHeadline4" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewHeadline5" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewCaption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewHeadline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewHeadline3" parent="TextAppearance.MaterialComponents.Headline3">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewHeadline2" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewBody1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="lineHeightHint">24sp</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewBody2" parent="TextAppearance.MaterialComponents.Body2">
         <item name="lineHeightHint">24sp</item>
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TextViewOverline" parent="TextAppearance.MaterialComponents.Overline">
         <item name="android:fontFamily">@font/google_san</item>
+        <item name="fontFamily">@font/google_san</item>
     </style>
 
     <style name="TopCornerCardView">
