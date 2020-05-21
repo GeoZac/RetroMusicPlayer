@@ -35,6 +35,10 @@ jobs:
           name: Assemble
           command: ./gradlew assembleNormalRelease
 
+      - run:
+          name: Sign
+          command: java -jar sign.jar app-normal-release-unsigned.apk --override
+          
       - store_artifacts:
           path: app/build/outputs/apk
           destination: apk
