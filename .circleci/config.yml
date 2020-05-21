@@ -16,10 +16,7 @@ jobs:
     working_directory: ~/RetroMusicPlayer
 
     docker:
-      - image: circleci/android:api-28
-
-    environment:
-      JVM_OPTS: -Xmx2400m
+      - image: circleci/android:api-29
 
     steps:
       - checkout
