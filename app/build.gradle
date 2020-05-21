@@ -89,6 +89,13 @@ android {
     kapt {
         generateStubs = true
     }
+    
+    // APK naming scheme
+    applicationVariants.all { variant ->
+       variant.outputs.all {
+           outputFileName = "RetroPlayer-release.apk"
+       }
+   }
 
 }
 
