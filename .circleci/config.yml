@@ -11,7 +11,7 @@ jobs:
     working_directory: ~/RetroMusicPlayer
 
     docker:
-      - image: circleci/android:api-29
+      - image: circleci/android@sha256:061e2535826cc3fe4c4a440e716bf06c36c80401ee635c339c6803b3e427ebb3
 
     environment:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
