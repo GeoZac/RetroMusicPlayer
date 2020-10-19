@@ -92,7 +92,7 @@ static def getProperty(Properties properties, String name) {
 }
 
 static def getDate() {
-    new Date().format('MMddyyyyss')
+    new Date().format('MMddyy')
 }
 
 
