@@ -30,7 +30,7 @@ jobs:
           command: ./gradlew assembleDebug
       - run:
           name: Assemble
-          command: ./gradlew clean assembleRelease
+          command: ./gradlew --no-daemon clean assembleRelease
 
       - run:
           name: Sign
