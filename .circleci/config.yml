@@ -30,16 +30,16 @@ jobs:
           command: ./gradlew assembleDebug
       - run:
           name: Assemble
-          command: ./gradlew --no-daemon clean assembleRelease
+          command: ./gradlew --no-daemon clean assembleNormalRelease
 
       - run:
           name: Sign
-          command: java -jar sign.jar app/build/outputs/apk/release/RetroPlayer-release.apk --override
+          command: java -jar sign.jar app/build/outputs/apk/normal/release/RetroPlayer-release.apk --override
 
       - run:
           name: Upload to Telegram
           command: |
-            curl -F caption="" -F document=@app/build/outputs/apk/release/RetroPlayer-release.apk "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument?chat_id=${TELEGRAM_CHAT_ID}"
+            curl -F caption="" -F document=@app/build/outputs/apk/normal/release/RetroPlayer-release.apk "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument?chat_id=${TELEGRAM_CHAT_ID}"
 
       - store_artifacts:
           path: app/build/outputs/apk
