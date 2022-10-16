@@ -11,7 +11,7 @@ jobs:
     working_directory: ~/RetroMusicPlayer
 
     docker:
-      - image: circleci/android:api-30
+      - image: cimg/android:2022.09
 
     environment:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
@@ -53,3 +53,5 @@ jobs:
           paths:
             - ~/.gradle
           key: retro-dependencies-{{ checksum "build.gradle" }}
+          
+    resource_class: large
