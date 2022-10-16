@@ -28,6 +28,11 @@ jobs:
       - run:
           name: Assemble
           command: ./gradlew assembleDebug
+          
+      - store_artifacts:
+          path: app/build/outputs/apk
+          destination: apk
+
       - run:
           name: Assemble
           command: ./gradlew --no-daemon clean assembleNormalRelease
