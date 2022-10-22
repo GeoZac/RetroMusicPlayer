@@ -87,7 +87,7 @@ android {
     // APK naming scheme
     applicationVariants.all { variant ->
        variant.outputs.all {
-           outputFileName = "RetroPlayer-release.apk"
+           outputFileName = "RetroPlayer-${variant.buildType.name}.apk"
        }
    }
 
